@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { EmailPage } from '../email/email';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,11 @@ export class HomePage {
 
   }
 
+onLoadEmail(){
+	this.navCtrl.push(EmailPage);
+
+    console.log("Clicked, go to Email");
+  }
+
 }
+
